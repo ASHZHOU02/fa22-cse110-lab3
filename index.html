@@ -74,6 +74,7 @@
             <a href="Video_and_Image/blank.html">LINK</a>
         </nav>
     </section>
+    <hr>
     <section>
         <h2>Comments</h2>
         <textarea id="Comments" name="Comments" rows="4" cols="50">Leave any comments or questions if you like.
@@ -90,8 +91,79 @@
                 <source src="Video_and_Image/2.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
               </audio>
+<hr>
+  <section>
+    <h2> Survey </h2>
+    <form >
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+      </form>
+      <label for="start"> date:</label>
 
-  
+<input type="date" id="start" name="trip-start"
+       value="2022-10-07"
+       min="2022-01-01" max="2022-12-31">
+
+    <form>
+        <label for="School">Choose your School from the list:</label>
+        <input list="Schools" name="School" id="School">
+        <datalist id="Schools">
+          <option value="UCSD">
+          <option value="UCLA">
+          <option value="UCB">
+          <option value="UCSB">
+          <option value="UCD">
+        </datalist>
+      </form>
+      <form>
+        <label for="years">Choose the year you graduate:</label>
+        <select name="years" id="years">
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+        </select>
+        <br>
+      </form>
+      <form>
+        <fieldset>
+          <h3>Choose your favorite Moive series among these three</h3>
+      
+          <input type="radio" id="kraken" name="movie" value="K">
+          <label for="kraken">Harry Potter</label><br>
+      
+          <input type="radio" id="sasquatch" name="movie" value="S">
+          <label for="sasquatch">Lord of Rings</label><br>
+      
+          <input type="radio" id="mothman" name="movie" value="M" />
+          <label for="mothman">Star War</label>
+        </fieldset>
+
+      </form>
+      <h3>Check for favorite sports</h3>
+
+<form action="/action_page.php">
+  <input type="checkbox" id="1" name="vehicle1" value="Bike">
+  <label for="1"> Swim</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> Run</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> Basketball</label><br>
+  <input type="checkbox" id="vehicle4" name="vehicle4" value="Run">
+  <label for="vehicle4"> Biking</label><br>
+  <input type="checkbox" id="vehicle5" name="vehicle5" value="Bike">
+  <label for="vehicle5"> Boxing</label><br>
+</form>
+<h3>Please write down your favorite books</h3>
+<textarea id="Comments" name="Comments" rows="4" cols="50">Leave any titles you like.
+</textarea>
+<br>
+<button type="button">Thank you for your patient</button>
+  </section>
   <footer>
     <p>Author: <b>Zichen Zhou</b></p>
     <p>email: <b>ziz022@ucsd.edu</b></p>

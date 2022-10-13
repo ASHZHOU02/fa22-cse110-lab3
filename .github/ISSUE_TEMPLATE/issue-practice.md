@@ -2,9 +2,9 @@
 name: Issue practice
 about: practice issue setup
 title: ''
-labels: ''
-assignees: ''
+labels: documentation
+assignees: ASHZHOU02
 
 ---
 
-practice issue setup
+update readme file

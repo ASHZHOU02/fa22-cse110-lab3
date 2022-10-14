@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <style>
-        .myDiv {
-          border: 5px outset red;
-          text-align: center;
-        }
-    </style>
+
+    <link rel="stylesheet" href="./sytle.css">
     <meta charset="UTF-8">
   <meta name="description" content="Meeting Minutes Practice">
     <title> HTML_Practice </title>
     <link rel="shortcut icon" type="image/jpg" href="Video_and_Image/1.jpg">
   </head>
   <body>
-    <header>
-        <div class="myDiv">
-        <h1> Discussion of cell layout generator with <span style="color:blue">gear ratio</span> factor.</h1>
-        <h2> Topic: Progress sharing and Collaboration</h2>
-        <h3> Date: Obctober 6th, 2022</h3>
-    </div>
+    <header class = "header_and_footer">
+        
+        <h1 id = "topic"> Discussion of cell layout generator with <span>Gear Ratio</span> factor</h1>
+        <h2 id="subtopic"> Topic: Progress sharing and Collaboration</h2>
+        <h3 id = "date"> Date: Obctober 6th, 2022</h3>
+  
     </header>
    
     <section>
         <h2> Attendance List</h2>
-        <details>
-            <summary> Participants listed below</summary>
-        <ul>
-            <li>C Cheng</li>
-            <li>A Kahng</li>
-            <li>B Lin</li>
-            <li>M Kim</li>
-            <li>Y Wang</li>
-            <li>N Nazeem</li>
-            <li>Z Zhu</li>
-            <li>Z Zhou</li>
+        <details class = "list1">
+          <summary>Participants listed below</summary>
+        <ul class = "flex_con">
+          <p>Professor:</p>
+            <li class = "flex_item1">C Cheng</li>
+            <li class = "flex_item1">A Kahng</li>
+            <li class = "flex_item1">B Lin</li>
+            <li class = "break"></li>
+            <p>Ph.D:</p>
+            <li class = "flex_item2">M Kim</li>
+            <li class = "flex_item2">Y Wang</li>
+            <li class = "break"></li>
+            <p>Undergraduate:</p>
+            <li class = "flex_item3">N Nazeem</li>
+            <li class = "flex_item3">Z Zhu</li>
+            <li class = "flex_item3">Z Zhou</li>
         </ul>
         </details>
     </section>
@@ -54,7 +55,7 @@
     <section>
         <h2><em>Unfinished business</em></h2>
         <ul>
-            <li><p> Current CFET cell synthesis implementation lack <i>industrial level information</i>, crucial design rule in real implementation<br> like <strong>gear ratio</strong> not well fit into current academic model</p></li>
+            <li><p> Current CFET cell synthesis implementation lack industrial level information, crucial design rule in real implementation like <strong>gear ratio</strong> not well fit into current academic model</p></li>
             <li><p> Kim’s implementation on gear ratio uses different approach than us, reaching out for communication and collaboration. </p></li>
         </ul>
     </section>
@@ -62,7 +63,7 @@
     <section> 
         <h2> Future discussion:</h2>
         <ol>
-            <li><strong>Open-source programming for cell layout generator in future, including changing programming<br> from perl to C++ (more common used language)</strong> </li>
+            <li><p><strong>Open-source programming for cell layout generator in future, including changing programming from perl to C++ (more common used language)</strong> </p></li>
             <li><p> Future collaboration in project, co-work in gear ratio factor, and sharing info, supports from industrial Inc in future 3nm semiconductor design </p></li>
         </ol>
     </section>
@@ -71,7 +72,7 @@
         <h2> Blueprint on semiconductor design</h2>
         <img src="Video_and_Image/2.jpg" alt="After FinFET">
         <nav>
-            <a href="Video_and_Image/blank.html">LINK</a>
+            <a href="Video_and_Image/blank.html" target = "link">LINK</a>
         </nav>
     </section>
     <hr>
